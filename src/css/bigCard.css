@@ -1,0 +1,63 @@
+.big-card{
+ width:95%;
+ margin:15px auto 0 auto;
+ background-color: white;
+ border-radius:5px;
+ padding:10px;
+}
+.pull-up{
+    -webkit-transition: all .25s ease;
+    -o-transition: all .25s ease;
+    -moz-transition: all .25s ease;
+    transition: all .25s ease;
+   
+  }
+  .pull-up:hover{
+    -webkit-transform: translateY(-4px) scale(1.02);
+    -moz-transform: translateY(-4px) scale(1.02);
+    -ms-transform: translateY(-4px) scale(1.02);
+    -o-transform: translateY(-4px) scale(1.02);
+    transform: translateY(-4px) scale(1.02);
+    -webkit-box-shadow: 0 14px 24px rgba(black,.2);
+    box-shadow: 0 14px 24px rgba(black,.2);
+    z-index: 999;
+  }
+
+  .veg{
+    display:inline-block;
+    border:2px solid #B6E6BD !important;
+    width:100%;
+    padding:5px;
+    
+}
+.nonVeg{
+    padding:5px;
+    border:2px solid #F59A8E !important;
+
+}
+.coffee{
+    padding:5px;
+    border:2px solid #eec510 !important; 
+}
+.thumbsUp{
+    display:none;
+    position:absolute;
+    right:13px;
+    bottom:5px;
+    font-size: 28px;
+    color:#B6E6BD;
+}
+
+.orderNumber{
+  font-size: 17px;
+  font-weight: 600;
+}
+.orderTime{
+  font-size: 15px;
+  color:grey;
+  font-weight: 400;
+}
+.order-card-title{
+ font-size:18px;
+ font-weight: 700;
+}
