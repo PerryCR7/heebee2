@@ -1,4 +1,5 @@
 import Avatar from 'avataaars';
+import "../css/bigCard.css"
 const Avataars = () => {
     function randomInt(min, max) { // min and max included 
         return Math.floor(Math.random() * (max - min + 1) + min)
@@ -10,7 +11,7 @@ const Avataars = () => {
     const bgColors=["#E5A3B0","#EC7D34","#B487F9",'#FE91BA',"#FED95D","#F5845A"];
   
     return (
-        <div style={{ display: 'inline-block', backgroundColor:`${bgColors[randomInt(0,5)]}`, borderRadius: "50%", width: "70px", height: "70px", padding: "3px" }}>
+        <div className='avtar' style={{ display: 'inline-block', backgroundColor:`${bgColors[randomInt(0,5)]}`, borderRadius: "50%", padding: "3px" }}>
             <Avatar
                 style={{ width: '60px', height: '60px' ,margin:"auto"}}
                 avatarStyle='Transparent'

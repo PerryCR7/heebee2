@@ -83,11 +83,11 @@ const Active = () => {
                     <div className='col-9'>
                         <div style={{ height: "100%" }} className="d-flex justify-content-end align-items-center ">
 
-                            <div className='navbar-link'><FontAwesomeIcon className="thumbsUp" icon={faHouse}></FontAwesomeIcon> <span>Home</span></div>
+                            <div className='navbar-link navContent'><FontAwesomeIcon className="thumbsUp" icon={faHouse}></FontAwesomeIcon> <span>Home</span></div>
 
-                            <div className='navbar-link'><FontAwesomeIcon className="thumbsUp" icon={faAppleWhole}></FontAwesomeIcon><span>Active</span></div>
+                            <div className='navbar-link navContent'><FontAwesomeIcon className="thumbsUp" icon={faAppleWhole}></FontAwesomeIcon><span>Active</span></div>
 
-                            <div className='navbar-link'><FontAwesomeIcon className="thumbsUp" icon={faCircleCheck}></FontAwesomeIcon> <span>Done</span></div>
+                            <div className='navbar-link navContent'><FontAwesomeIcon className="thumbsUp" icon={faCircleCheck}></FontAwesomeIcon> <span>Done</span></div>
 
                         </div>
 
