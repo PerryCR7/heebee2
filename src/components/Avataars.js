@@ -11,9 +11,9 @@ const Avataars = () => {
     const bgColors=["#E5A3B0","#EC7D34","#B487F9",'#FE91BA',"#FED95D","#F5845A"];
   
     return (
-        <div className='avtar' style={{ display: 'inline-block', backgroundColor:`${bgColors[randomInt(0,5)]}`, borderRadius: "50%", padding: "3px" }}>
+        <div className='avtar' style={{ display: 'inline-block', backgroundColor:`${bgColors[randomInt(0,5)]}`, borderRadius: "50%", padding: "3px",height:"60px",width:"60px" }}>
             <Avatar
-                style={{ width: '60px', height: '60px' ,margin:"auto"}}
+                style={{ width: '50px', height: '50px' ,margin:"auto"}}
                 avatarStyle='Transparent'
                 topType={tops[randomInt(0,24)]}
                 accessoriesType='Blank'

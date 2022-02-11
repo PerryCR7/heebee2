@@ -8,7 +8,8 @@ function App() {
     <Router>
     <div className="App">
       <Routes>
-        <Route path="/" element={<Active />} />
+        <Route path="/" element={<Active role={"kitchen"}/>} />
+        <Route path="/barista" element={<Active role={"baristo"}/>} />
         <Route path="/done" element={<Done/>}/>
         
       </Routes>

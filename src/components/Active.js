@@ -7,8 +7,8 @@ import { faAppleWhole } from '@fortawesome/free-solid-svg-icons';
 import { faHouse } from '@fortawesome/free-solid-svg-icons';
 import "../css/active.css";
 
-const Active = () => {
-    const [role, setRole] = useState("kitchen");
+const Active = (props) => {
+    const [role, setRole] = useState(props.role);
 
     const TotalOrders = [
         {
@@ -67,7 +67,7 @@ const Active = () => {
     const renderCards = () => {
         return TotalOrders.map((item, index) => {
             return (
-                <div className='row'> <BigCard item={item} /></div>
+                <div className='row'> <BigCard item={item} role={role}/></div>
                 
             )
         })

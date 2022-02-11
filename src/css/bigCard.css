@@ -65,6 +65,7 @@
   width:70px;
    height:70px;
 }
+
 @media only screen and (max-width: 786px) {
   .orderNumber{
     font-size: 14px;
@@ -79,8 +80,18 @@
    font-size:14px;
    font-weight: 700;
   }
+  .order-card-text{
+    font-size:12px;
+  }
   .btn-info,.btn-secondary{
-    font-size: 14px;
+    font-size: 12px;
+  }
+  .quantity{
+    font-size: 13px;
+  }
+  .card-img-top{
+    width:70px !important;
+    height:70px !important;
   }
   
 }
@@ -105,5 +116,11 @@
   .btn-info,.btn-secondary{
     font-size: 12px;
   }
-  
+  .quantity{
+    font-size: 12px;
+  }
+  .card-img-top{
+    width:80px !important;
+    height:80px !important;
+  }
 }
