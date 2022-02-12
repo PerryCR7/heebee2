@@ -46,13 +46,11 @@ const BigCard = (props) => {
                                     <div className="col-4"><img className="card-img-top" style={{ width: "80px", height: "80px", borderRadius: "50%" }} src={data.results[index].image} alt="Card image cap" /></div>
                                     <div className="col-8">
                                         <div className="order-card-title">{data.results[index].name}</div>
-                                       
+                                        <div className="order-card-text">{item.descr}</div>
                                         <div className="quantity" >{item.quantity}</div>
-                                        <div id={"button" + newId} className="btn btn-info" onClick={() => { $("#" + newId + " .thumbsUp").css("display", "inline"); $("#button" + newId).css("display", "none") }}>Ready?</div>
-                                       
-                                        
+                                        <div id={"button" + newId} className="btn btn-check" onClick={() => { $("#" + newId + " .thumbsUp").css("display", "inline"); $("#button" + newId).css("display", "none") }}>✔?</div>
                                         <div id={newId}  ><FontAwesomeIcon className="thumbsUp" icon={faThumbsUp}></FontAwesomeIcon></div>
-                                        
+
                                     </div>
                                 </div>
 
@@ -68,9 +66,8 @@ const BigCard = (props) => {
                                     <div className="col-4"><img className="card-img-top" style={{ width: "80px", height: "80px", borderRadius: "50%" }} src={data.results[index].image} alt="Card image cap" /></div>
                                     <div className="col-8">
                                         <div className="order-card-title">{data.results[index].name}</div>
-                                        <div className="order-card-text">{data.results[index].milk}</div>
-                                        <div className="order-card-text">{data.results[index].size}</div>
-                                        <div id={"button" + newId} className="btn btn-info" onClick={() => { $("#" + newId + " .thumbsUp").css("display", "inline"); $("#button" + newId).css("display", "none") }}>Ready?</div>
+                                        <div className="order-card-text">{item.descr}</div>
+                                        <div id={"button" + newId} className="btn btn-check" onClick={() => { $("#" + newId + " .thumbsUp").css("display", "inline"); $("#button" + newId).css("display", "none") }}>✔?</div>
                                         <div id={newId}  ><FontAwesomeIcon className="thumbsUp" icon={faThumbsUp}></FontAwesomeIcon></div>
                                         <div className="quantity" style={{ fontWeight: "600" }}>{item.quantity}</div>
                                     </div>
@@ -109,8 +106,7 @@ const BigCard = (props) => {
                                     <div className="col-4"><img className="card-img-top" style={{ width: "80px", height: "80px", borderRadius: "50%" }} src={data.results[index].image} alt="Card image cap" /></div>
                                     <div className="col-8">
                                         <div className="order-card-title">{data.results[index].name}</div>
-                                        <div className="order-card-text">{data.results[index].milk}</div>
-                                        <div className="order-card-text">{data.results[index].size}</div>
+                                        <div className="order-card-text">{item.descr}</div>
                                         <div className="quantity" style={{ fontWeight: "600" }}>{item.quantity}</div>
                                     </div>
                                 </div>
@@ -128,7 +124,7 @@ const BigCard = (props) => {
                                     <div className="col-4 text-center"><img className="card-img-top" style={{ width: "80px", height: "80px", borderRadius: "50%" }} src={data.results[index].image} alt="Card image cap" /></div>
                                     <div className="col-8">
                                         <div className="order-card-title">{data.results[index].name}</div>
-
+                                        <div className="order-card-text">{item.descr}</div>
                                         <div className="quantity" style={{ fontWeight: "600" }}>{item.quantity}</div>
                                     </div>
                                 </div>

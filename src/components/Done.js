@@ -26,28 +26,33 @@ const Done = (props) => {
             "Orders": [
                 {
                     "orderId": "001",
-                    "quantity": "2"
+                    "quantity": "2",
+                    "descr":"Large, skimmed Milk "
                 }, {
                     "orderId": "002",
-                    "quantity": "1"
+                    "quantity": "1",
+                    "descr":"Large, Double Patty , Without Anchovies"
                 }
                 ,
                 {
                     "orderId": "003",
-                    "quantity": "1"
+                    "quantity": "1", 
+                    "descr":"Medium, No Milk "
                 },
                 {
                     "orderId": "004",
-                    "quantity": "1"
+                    "quantity": "1","descr":"Large, Skimmed Milk  "
                 },
                 {
                     "orderId": "005",
-                    "quantity": "1"
+                    "quantity": "1",
+                    "descr":"Large, Sour Cream, Cheddar Cheese "
                 },
 
                 {
                     "orderId": "006",
-                    "quantity": "1"
+                    "quantity": "1",
+                    "descr":"Large, Cheese Burst ,No Mushrooms"
                 }
             ]
         },
@@ -59,14 +64,17 @@ const Done = (props) => {
             "Orders": [
                 {
                     "orderId": "003",
-                    "quantity": "2"
+                    "quantity": "2",
+                    "descr":"Medium, No Milk "
                 }, {
                     "orderId": "001",
-                    "quantity": "1"
+                    "quantity": "1",
+                    "descr":"Large, skimmed Milk "
                 },
                 {
                     "orderId": "006",
-                    "quantity": "1"
+                    "quantity": "1",
+                    "descr":"Large, No Tomatoes ,Onion,Double Cheese "
                 }
             ]
         }, {
@@ -76,15 +84,18 @@ const Done = (props) => {
             "address": "Sarabha Nagar, 100159071",
             "Orders": [
                 {
-                    "orderId": "003",
-                    "quantity": "2"
+                    "orderId": "007",
+                    "quantity": "2",
+                    "descr":"Medium, No Milk "
                 }, {
-                    "orderId": "001",
-                    "quantity": "1"
+                    "orderId": "009",
+                    "quantity": "1",
+                    "descr":"With Fresh mint, lemon "
                 },
                 {
-                    "orderId": "006",
-                    "quantity": "1"
+                    "orderId": "010",
+                    "quantity": "2",
+                    "descr":"onion , cheese, tomatoes "
                 }
             ]
         }
@@ -101,7 +112,7 @@ const Done = (props) => {
                         <div className='w-75 ready-small-content'>
                             <div className="order-card-title">{data.results[index].name}</div>
 
-                            <div className="order-card-text">{data.results[index].size},{data.results[index].milk}</div>
+                            <div className="order-card-text">{orderItem.descr}</div>
                             <div className="quan" >qty:{orderItem.quantity}</div>
                         </div>
                     </div>
@@ -113,7 +124,7 @@ const Done = (props) => {
                         <div className='w-25'><img className="DoneImage"  style={{ borderRadius: "50%" }} src={data.results[index].image} alt={newId + "IMAGE"}></img></div>
                         <div className='w-75 ready-small-content'>
                             <div className="order-card-title">{data.results[index].name}</div>
-
+                            <div className="order-card-text">{orderItem.descr}</div>
                             <div className="quan" >qty:{orderItem.quantity}</div>
                         </div>
                     </div>
