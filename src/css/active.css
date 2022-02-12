@@ -1,10 +1,16 @@
 .navbar-link{
+    text-decoration: none;
     font-size: 18px;
-    color:#FA9937;
+    color:white;
     padding:5px 15px;
-    border:1px solid #FA9937;
+    border:1px solid #86B7A0;
     border-radius:5px;
     margin-left: 12px;
+}
+.navbar-link:hover{
+    text-decoration: none;
+
+
 }
 .navbar-link span{
     margin-left: 7px;
@@ -16,20 +22,36 @@
     color:#5F3C2A;
 }
 .active-button{
-    background-color: #FA9937;
+    border:2px solid #86B7A0;
+    background-color:#86B7A0;
     color:white;
     font-weight: 600;
+}
+.active-button:hover{
+     border:3px solid #86B7A0;
+    background-color:#86B7A0;
+    color:white;
+    
 }
 .nav-con{
     margin-right: 2.6%;
 }
+.ready-button{
+    border: 2px solid #F59A8E;
+    color:#F59A8E;
+}
+.ready-button:hover{
+    border: 2px solid #F59A8E;
+    color:#F59A8E;
+}
+
 
 @media screen and (max-width:786px) {
     .navContent{
         font-size: 14px;
     }
     .active-button{
-        background-color: #FA9937;
+   
         color:white;
         font-weight: 600;
     }
@@ -47,7 +69,7 @@
         font-weight: 900;
     }
     .active-button{
-        background-color: #FA9937;
+  
         color:white;
         font-weight: 600;
     }

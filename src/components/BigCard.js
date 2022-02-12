@@ -39,9 +39,9 @@ const BigCard = (props) => {
             if (data.results[index].type === props.role) {
                 if (props.role === "kitchen") {
                     return (
-                        <div className="col-lg-3 col-md-4 col-sm-6 col-xs-12 mt-3">
+                        <div key={newId} className="col-lg-3 col-md-4 col-sm-6 col-xs-12 mt-3 ">
 
-                            <div className={"card mb-2 " + foodColor}>
+                            <div className={"card p-2 mb-2 " + foodColor}>
                                 <div className="row">
                                     <div className="col-4"><img className="card-img-top" style={{ width: "80px", height: "80px", borderRadius: "50%" }} src={data.results[index].image} alt="Card image cap" /></div>
                                     <div className="col-8">
@@ -61,7 +61,7 @@ const BigCard = (props) => {
                 }
                 else {
                     return (
-                        <div className="col-lg-3 col-md-4 col-sm-6 col-xs-12 ">
+                        <div key={newId} className="col-lg-3 col-md-4 col-sm-6 col-xs-12 ">
 
                             <div className={"card mb-2 " + foodColor}>
                                 <div className="row">
@@ -102,7 +102,7 @@ const BigCard = (props) => {
                 if (data.results[index].type === "baristo") {
                     return (
 
-                        <div className="col-lg-3 col-md-4 col-sm-6 col-xs-12 ">
+                        <div key={newId} className="col-lg-3 col-md-4 col-sm-6 col-xs-12 ">
 
                             <div className={"card mb-2 " + foodColor}>
                                 <div className="row">
@@ -121,7 +121,7 @@ const BigCard = (props) => {
                 }
                 else {
                     return (
-                        <div className="col-lg-3 col-md-4 col-sm-6 col-xs-12 mt-3">
+                        <div key={newId} className="col-lg-3 col-md-4 col-sm-6 col-xs-12 mt-3 ">
 
                             <div className={"card mb-2 " + foodColor}>
                                 <div className="row">

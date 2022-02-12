@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from 'react';
+import {Link} from "react-router-dom";
 import logo from "../assets/logo.png"
 import BigCard from './BigCard';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleCheck } from '@fortawesome/free-solid-svg-icons';
 import { faAppleWhole } from '@fortawesome/free-solid-svg-icons';
-import { faHouse } from '@fortawesome/free-solid-svg-icons';
+
 import "../css/active.css";
 
 const Active = (props) => {
@@ -67,7 +68,7 @@ const Active = (props) => {
     const renderCards = () => {
         return TotalOrders.map((item, index) => {
             return (
-                <div className='row'> <BigCard item={item} role={role}/></div>
+                <div className='row' key={index}> <BigCard item={item} role={role}/></div>
                 
             )
         })
@@ -76,21 +77,16 @@ const Active = (props) => {
 
         // navbar starts
         <React.Fragment>
-            <nav className="container-fluid bg-light">
-                <div class='row' style={{whiteSpace:"nowrap"}}>
+            <nav className="container-fluid" style={{backgroundColor:"white"}}>
+                <div className='row' style={{whiteSpace:"nowrap"}}>
                     <div className="col-5"><img width="70px" src={logo} alt="logo" style={{margin:"10px 0 5px 0"}}/>
                     <span className='main-role'>{role==='kitchen'?"Kitchen":"Barista"}</span>
                     </div>
 
                     <div className='col-7'>
                         <div style={{ height: "100%" }} className="d-flex justify-content-end align-items-center nav-con ">
-
-                           
-
-                            <div className='navbar-link navContent active-button'><FontAwesomeIcon className="thumbsUp" icon={faAppleWhole}></FontAwesomeIcon><span>Active</span></div>
-
-                            <div className='navbar-link navContent'><FontAwesomeIcon className="thumbsUp" icon={faCircleCheck}></FontAwesomeIcon> <span>Done</span></div>
-
+                            <Link to="/" className='navbar-link navContent active-button'><FontAwesomeIcon icon={faAppleWhole}></FontAwesomeIcon><span>Active</span></Link>
+                            <Link to="/done" className='navbar-link navContent ready-button'><FontAwesomeIcon  icon={faCircleCheck}></FontAwesomeIcon> <span>Ready</span></Link>
                         </div>
 
                     </div>

@@ -10,7 +10,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Active role={"kitchen"}/>} />
         <Route path="/barista" element={<Active role={"baristo"}/>} />
-        <Route path="/done" element={<Done/>}/>
+        <Route path="/done" element={<Done role={"kitchen"}/>}/>
         
       </Routes>
     </div>
