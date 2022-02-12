@@ -9,14 +9,50 @@
 .navbar-link span{
     margin-left: 7px;
 }
+.main-role{
+    margin-left: 10px;
+    font-size: 25px;
+    font-weight: 900;
+    color:#5F3C2A;
+}
+.active-button{
+    background-color: #FA9937;
+    color:white;
+    font-weight: 600;
+}
+.nav-con{
+    margin-right: 2.6%;
+}
 
 @media screen and (max-width:786px) {
     .navContent{
         font-size: 14px;
+    }
+    .active-button{
+        background-color: #FA9937;
+        color:white;
+        font-weight: 600;
+    }
+    .nav-con{
+        margin-right: 5px;
     }
 }
 @media screen and (max-width:480px) {
     .navContent{
         font-size: 12px;
     }
+    .main-role{
+        margin-left: 4px;
+        font-size: 18px;
+        font-weight: 900;
+    }
+    .active-button{
+        background-color: #FA9937;
+        color:white;
+        font-weight: 600;
+    }
+    .nav-con{
+        margin-right: -3px;
+    }
+
 }

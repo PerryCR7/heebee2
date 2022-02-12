@@ -39,16 +39,20 @@ const BigCard = (props) => {
             if (data.results[index].type === props.role) {
                 if (props.role === "kitchen") {
                     return (
-                        <div className="col-lg-3 col-md-4 col-xs-12 mt-3">
+                        <div className="col-lg-3 col-md-4 col-sm-6 col-xs-12 mt-3">
 
                             <div className={"card mb-2 " + foodColor}>
                                 <div className="row">
                                     <div className="col-4"><img className="card-img-top" style={{ width: "80px", height: "80px", borderRadius: "50%" }} src={data.results[index].image} alt="Card image cap" /></div>
                                     <div className="col-8">
                                         <div className="order-card-title">{data.results[index].name}</div>
+                                       
+                                        <div className="quantity" >{item.quantity}</div>
                                         <div id={"button" + newId} className="btn btn-info" onClick={() => { $("#" + newId + " .thumbsUp").css("display", "inline"); $("#button" + newId).css("display", "none") }}>Ready?</div>
+                                       
+                                        
                                         <div id={newId}  ><FontAwesomeIcon className="thumbsUp" icon={faThumbsUp}></FontAwesomeIcon></div>
-                                        <div className="quantity" style={{ fontWeight: "600" }}>Qty : {item.quantity}</div>
+                                        
                                     </div>
                                 </div>
 
@@ -57,7 +61,7 @@ const BigCard = (props) => {
                 }
                 else {
                     return (
-                        <div className="col-lg-3 col-md-4 col-xs-12 ">
+                        <div className="col-lg-3 col-md-4 col-sm-6 col-xs-12 ">
 
                             <div className={"card mb-2 " + foodColor}>
                                 <div className="row">
@@ -68,7 +72,7 @@ const BigCard = (props) => {
                                         <div className="order-card-text">{data.results[index].size}</div>
                                         <div id={"button" + newId} className="btn btn-info" onClick={() => { $("#" + newId + " .thumbsUp").css("display", "inline"); $("#button" + newId).css("display", "none") }}>Ready?</div>
                                         <div id={newId}  ><FontAwesomeIcon className="thumbsUp" icon={faThumbsUp}></FontAwesomeIcon></div>
-                                        <div className="quantity" style={{ fontWeight: "600" }}>Qty : {item.quantity}</div>
+                                        <div className="quantity" style={{ fontWeight: "600" }}>{item.quantity}</div>
                                     </div>
                                 </div>
 
@@ -98,7 +102,7 @@ const BigCard = (props) => {
                 if (data.results[index].type === "baristo") {
                     return (
 
-                        <div className="col-lg-3 col-md-4 col-xs-12 ">
+                        <div className="col-lg-3 col-md-4 col-sm-6 col-xs-12 ">
 
                             <div className={"card mb-2 " + foodColor}>
                                 <div className="row">
@@ -107,7 +111,7 @@ const BigCard = (props) => {
                                         <div className="order-card-title">{data.results[index].name}</div>
                                         <div className="order-card-text">{data.results[index].milk}</div>
                                         <div className="order-card-text">{data.results[index].size}</div>
-                                        <div className="quantity" style={{ fontWeight: "600" }}>Qty : {item.quantity}</div>
+                                        <div className="quantity" style={{ fontWeight: "600" }}>{item.quantity}</div>
                                     </div>
                                 </div>
 
@@ -117,7 +121,7 @@ const BigCard = (props) => {
                 }
                 else {
                     return (
-                        <div className="col-lg-3 col-md-4 col-xs-12 mt-3">
+                        <div className="col-lg-3 col-md-4 col-sm-6 col-xs-12 mt-3">
 
                             <div className={"card mb-2 " + foodColor}>
                                 <div className="row">
@@ -125,7 +129,7 @@ const BigCard = (props) => {
                                     <div className="col-8">
                                         <div className="order-card-title">{data.results[index].name}</div>
 
-                                        <div className="quantity" style={{ fontWeight: "600" }}>Qty : {item.quantity}</div>
+                                        <div className="quantity" style={{ fontWeight: "600" }}>{item.quantity}</div>
                                     </div>
                                 </div>
 

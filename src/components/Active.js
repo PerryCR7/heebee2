@@ -77,15 +77,17 @@ const Active = (props) => {
         // navbar starts
         <React.Fragment>
             <nav className="container-fluid bg-light">
-                <div class='row'>
-                    <div className="col-3"><img width="70px" src={logo} alt="logo" /></div>
+                <div class='row' style={{whiteSpace:"nowrap"}}>
+                    <div className="col-5"><img width="70px" src={logo} alt="logo" style={{margin:"10px 0 5px 0"}}/>
+                    <span className='main-role'>{role==='kitchen'?"Kitchen":"Barista"}</span>
+                    </div>
 
-                    <div className='col-9'>
-                        <div style={{ height: "100%" }} className="d-flex justify-content-end align-items-center ">
+                    <div className='col-7'>
+                        <div style={{ height: "100%" }} className="d-flex justify-content-end align-items-center nav-con ">
 
-                            <div className='navbar-link navContent'><FontAwesomeIcon className="thumbsUp" icon={faHouse}></FontAwesomeIcon> <span>Home</span></div>
+                           
 
-                            <div className='navbar-link navContent'><FontAwesomeIcon className="thumbsUp" icon={faAppleWhole}></FontAwesomeIcon><span>Active</span></div>
+                            <div className='navbar-link navContent active-button'><FontAwesomeIcon className="thumbsUp" icon={faAppleWhole}></FontAwesomeIcon><span>Active</span></div>
 
                             <div className='navbar-link navContent'><FontAwesomeIcon className="thumbsUp" icon={faCircleCheck}></FontAwesomeIcon> <span>Done</span></div>
 
