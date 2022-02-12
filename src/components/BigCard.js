@@ -7,11 +7,7 @@ import { v4 as uuid } from 'uuid';
 import "../css/bigCard.css"
 import Stopwatch from "./Stopwatch";
 import data from "../data"
-const BigCard = (props) => {
-    // const [foodColor, setFoodColor] = useState("");
-
-
-
+const BigCard = (props)=>{
     const getColor = (index) => {
         if (data.results[index].foodType === "coffee") {
             return ("coffee");
@@ -48,7 +44,7 @@ const BigCard = (props) => {
                                         <div className="order-card-title">{data.results[index].name}</div>
                                         <div className="order-card-text">{item.descr}</div>
                                         <div className="quantity" >{item.quantity}</div>
-                                        <div id={"button" + newId} className="btn btn-check" onClick={() => { $("#" + newId + " .thumbsUp").css("display", "inline"); $("#button" + newId).css("display", "none") }}>✔?</div>
+                                        <div id={"button" + newId} className="btn btn-check" onClick={() => { $("#" + newId + " .thumbsUp").css("display", "inline"); $("#button" + newId).css("display", "none") }}>Done?</div>
                                         <div id={newId}  ><FontAwesomeIcon className="thumbsUp" icon={faThumbsUp}></FontAwesomeIcon></div>
 
                                     </div>
@@ -67,7 +63,7 @@ const BigCard = (props) => {
                                     <div className="col-8">
                                         <div className="order-card-title">{data.results[index].name}</div>
                                         <div className="order-card-text">{item.descr}</div>
-                                        <div id={"button" + newId} className="btn btn-check" onClick={() => { $("#" + newId + " .thumbsUp").css("display", "inline"); $("#button" + newId).css("display", "none") }}>✔?</div>
+                                        <div id={"button" + newId} className="btn btn-check" onClick={() => { $("#" + newId + " .thumbsUp").css("display", "inline"); $("#button" + newId).css("display", "none") }}>Done?</div>
                                         <div id={newId}  ><FontAwesomeIcon className="thumbsUp" icon={faThumbsUp}></FontAwesomeIcon></div>
                                         <div className="quantity" style={{ fontWeight: "600" }}>{item.quantity}</div>
                                     </div>
