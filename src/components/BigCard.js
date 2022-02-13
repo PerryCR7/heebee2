@@ -39,8 +39,8 @@ const BigCard = (props)=>{
 
                             <div className={"card p-2 mb-2 pb-4 " + foodColor}>
                                 <div className="row">
-                                    <div className="col-lg-5 col-4 d-flex justify-content-center align-items-center"><img className="card-img-top" style={{ width: "80px", height: "80px", borderRadius: "50%" }} src={data.results[index].image} alt="Card image cap" /></div>
-                                    <div className="col-lg-7 col-8">
+                                    <div className=" col-4 d-flex justify-content-center align-items-center"><img className="card-img-top" style={{ width: "80px", height: "80px", borderRadius: "50%" }} src={data.results[index].image} alt="Card image cap" /></div>
+                                    <div className=" col-8">
                                         <div className="order-card-title">{data.results[index].name}</div>
                                         <div className="order-card-text">{item.descr}</div>
                                         <div className="quantity" >{item.quantity}</div>
@@ -99,8 +99,8 @@ const BigCard = (props)=>{
 
                             <div className={"card mb-2  " + foodColor}>
                                 <div className="row">
-                                    <div className="col-4 d-flex justify-content-center align-items-center"><img className="card-img-top" style={{ width: "80px", height: "80px", borderRadius: "50%" }} src={data.results[index].image} alt="Card image cap" /></div>
-                                    <div className="col-8">
+                                    <div className="col-3 d-flex justify-content-center align-items-center"><img className="card-img-top" style={{ width: "80px", height: "80px", borderRadius: "50%" }} src={data.results[index].image} alt="Card image cap" /></div>
+                                    <div className="col-9">
                                         <div className="order-card-title">{data.results[index].name}</div>
                                         <div className="order-card-text">{item.descr}</div>
                                         <div className="quantity" style={{ fontWeight: "600" }}>{item.quantity}</div>
