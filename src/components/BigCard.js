@@ -35,12 +35,12 @@ const BigCard = (props)=>{
             if (data.results[index].type === props.role) {
                 if (props.role === "kitchen") {
                     return (
-                        <div key={newId} className="col-lg-3 col-md-4 col-sm-6 col-xs-12 mt-3 ">
+                        <div key={newId} className="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-xs-12 mt-3 ">
 
-                            <div className={"card p-2 mb-2 " + foodColor}>
+                            <div className={"card p-2 mb-2 pb-4 " + foodColor}>
                                 <div className="row">
-                                    <div className="col-4"><img className="card-img-top" style={{ width: "80px", height: "80px", borderRadius: "50%" }} src={data.results[index].image} alt="Card image cap" /></div>
-                                    <div className="col-8">
+                                    <div className="col-lg-5 col-4 d-flex justify-content-center align-items-center"><img className="card-img-top" style={{ width: "80px", height: "80px", borderRadius: "50%" }} src={data.results[index].image} alt="Card image cap" /></div>
+                                    <div className="col-lg-7 col-8">
                                         <div className="order-card-title">{data.results[index].name}</div>
                                         <div className="order-card-text">{item.descr}</div>
                                         <div className="quantity" >{item.quantity}</div>
@@ -55,11 +55,11 @@ const BigCard = (props)=>{
                 }
                 else {
                     return (
-                        <div key={newId} className="col-lg-3 col-md-4 col-sm-6 col-xs-12 ">
+                        <div key={newId} className="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-xs-12 ">
 
-                            <div className={"card mb-2 " + foodColor}>
+                            <div className={"card p-2 mb-2 pb-4 " + foodColor}>
                                 <div className="row">
-                                    <div className="col-4"><img className="card-img-top" style={{ width: "80px", height: "80px", borderRadius: "50%" }} src={data.results[index].image} alt="Card image cap" /></div>
+                                    <div className="col-4 d-flex justify-content-center align-items-center"><img className="card-img-top" style={{ width: "80px", height: "80px", borderRadius: "50%" }} src={data.results[index].image} alt="Card image cap" /></div>
                                     <div className="col-8">
                                         <div className="order-card-title">{data.results[index].name}</div>
                                         <div className="order-card-text">{item.descr}</div>
@@ -95,11 +95,11 @@ const BigCard = (props)=>{
                 if (data.results[index].type === "baristo") {
                     return (
 
-                        <div key={newId} className="col-lg-3 col-md-4 col-sm-6 col-xs-12 ">
+                        <div key={newId} className="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-xs-12 ">
 
-                            <div className={"card mb-2 " + foodColor}>
+                            <div className={"card mb-2  " + foodColor}>
                                 <div className="row">
-                                    <div className="col-4"><img className="card-img-top" style={{ width: "80px", height: "80px", borderRadius: "50%" }} src={data.results[index].image} alt="Card image cap" /></div>
+                                    <div className="col-4 d-flex justify-content-center align-items-center"><img className="card-img-top" style={{ width: "80px", height: "80px", borderRadius: "50%" }} src={data.results[index].image} alt="Card image cap" /></div>
                                     <div className="col-8">
                                         <div className="order-card-title">{data.results[index].name}</div>
                                         <div className="order-card-text">{item.descr}</div>
@@ -113,12 +113,12 @@ const BigCard = (props)=>{
                 }
                 else {
                     return (
-                        <div key={newId} className="col-lg-3 col-md-4 col-sm-6 col-xs-12 mt-3 ">
+                        <div key={newId} className="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-xs-12 mt-3 ">
 
                             <div className={"card mb-2 " + foodColor}>
                                 <div className="row">
-                                    <div className="col-4 text-center"><img className="card-img-top" style={{ width: "80px", height: "80px", borderRadius: "50%" }} src={data.results[index].image} alt="Card image cap" /></div>
-                                    <div className="col-8">
+                                    <div className="col-4 col-lg-5 d-flex justify-content-center align-items-center "><img className="card-img-top" style={{ width: "80px", height: "80px", borderRadius: "50%" }} src={data.results[index].image} alt="Card image cap" /></div>
+                                    <div className="col-8 col-lg-7">
                                         <div className="order-card-title">{data.results[index].name}</div>
                                         <div className="order-card-text">{item.descr}</div>
                                         <div className="quantity" style={{ fontWeight: "600" }}>{item.quantity}</div>
@@ -141,7 +141,7 @@ const BigCard = (props)=>{
                 <div className="row">
                     <div className="col-4 orderNumber"><span style={{ whiteSpace: "nowrap" }}>ORDER #{props.item.oId}</span><div className="orderTime">{getTime(props.item.orderTime)}</div></div>
                     <div className="col-4 orderNumber" style={{ whiteSpace: "nowrap" }}>PREPARING:<span style={{ marginLeft: "10px", color: "red" }}><Stopwatch /></span></div>
-                    <div className="col-4 text-right d-flex justify-content-end align-items-start"><span className="orderNumber mr-3 nameCust" style={{ color: "grey" }}>{props.item["Customer-Name"]}<br />{props.item.address}</span><span><Avataars /></span></div>
+                    <div className="col-4 text-right d-flex justify-content-end align-items-start"><span className="orderNumber mr-3 nameCust" style={{ color: "grey" }}>{props.item["Customer-Name"]}<br /><span style={{whiteSpace:"nowrap"}}>{props.item.address}</span></span><span><Avataars /></span></div>
                 </div>
                 <div className="row">
                     {renderSmallCARDS()}

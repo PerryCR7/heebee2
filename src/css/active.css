@@ -3,7 +3,7 @@
     font-size: 18px;
     color:white;
     padding:5px 15px;
-    border:1px solid #86B7A0;
+    border:1px solid #31da8b;
     border-radius:5px;
     margin-left: 12px;
 }
@@ -22,14 +22,14 @@
     color:#5F3C2A;
 }
 .active-button{
-    border:2px solid #86B7A0;
-    background-color:#86B7A0;
+    border:2px solid #31da8b;
+    background-color:#31da8b;
     color:white;
     font-weight: 600;
 }
 .active-button:hover{
-     border:3px solid #86B7A0;
-    background-color:#86B7A0;
+     border:3px solid #31da8b;
+    background-color:#31da8b;
     color:white;
     
 }
@@ -37,12 +37,12 @@
     margin-right: 2.6%;
 }
 .ready-button{
-    border: 2px solid #F59A8E;
-    color:#F59A8E;
+    border: 2px solid #f83218;
+    color:#f83218;
 }
 .ready-button:hover{
-    border: 2px solid #F59A8E;
-    color:#F59A8E;
+    border: 2px solid #f83218;
+    color:#f83218;
 }
 
 

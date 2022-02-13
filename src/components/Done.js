@@ -163,8 +163,8 @@ const Done = (props) => {
                     </div>
                     <div className='col-7'>
                         <div style={{ height: "100%" }} className="d-flex justify-content-end align-items-center nav-con ">
-                        <Link to="/" className='navbar-link navContent active-button'><FontAwesomeIcon  icon={faAppleWhole}></FontAwesomeIcon><span>Active</span></Link>
-                            <Link to="/done" className='navbar-link navContent ready-button'><FontAwesomeIcon icon={faCircleCheck}></FontAwesomeIcon> <span>Ready</span></Link>
+                        <Link to="/" className='navbar-link navContent ready-button '><FontAwesomeIcon  icon={faAppleWhole}></FontAwesomeIcon><span>Active</span></Link>
+                            <Link to="/done" className='navbar-link navContent active-button '><FontAwesomeIcon icon={faCircleCheck}></FontAwesomeIcon> <span>Ready</span></Link>
                         </div>
                     </div>
                 </div>
