@@ -12,6 +12,7 @@ import "../css/active.css";
 
 const Active = (props) => {
     const [role, setRole] = useState(props.role);
+    props.setTheRole(props.role);
 
     const TotalOrders = [
         {

@@ -82,15 +82,15 @@
 }
 @media screen and (max-width: 480px) {
   .orderNumber {
-    font-size: 12px;
+    font-size: 14px;
   }
   .orderTime {
-    font-size: 12px;
+    font-size: 14px;
     color: grey;
     font-weight: 400;
   }
   .order-card-title {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 700;
   }
   .DoneImage {

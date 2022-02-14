@@ -219,7 +219,7 @@ const Done = (props) => {
         return ReadyOrders.map((item, index) => {
             return (
                 <div className='col-lg-4 col-md-6 col-sm-6 col-xs-12 mt-3'>
-                    <div className="card" style={{ width: "100%", height: "60vh" , borderRadius:"10px" }}>
+                    <div className="card" style={{ width: "100%", height: "60vh" , borderRadius:"10px", overflow:"hidden" }}>
                         <div className="card-body">
                             <div className='row'>
                                 <div className='col-8 orderNumber'>Order#{item.oId}<br /><span className='orderTime'>{item['Customer-Name']}</span> <div className="orderTime" style={{whiteSpace:"nowrap"}}>{getTime(item.orderTime)}</div>
@@ -241,12 +241,13 @@ const Done = (props) => {
         <React.Fragment>
             <nav className="container-fluid" style={{ backgroundColor: "white" }}>
                 <div className='row' style={{ whiteSpace: "nowrap" }} style={{padding:"0",width:"100%",margin:"0"}}>
-                    <div className="col-5"><img width="70px" src={logo} alt="logo" style={{ padding: "10px 0 5px 0" }} />
-                        {/* <span className='main-role'>{role === 'kitchen' ? "Kitchen" : "Barista"}</span> */}
+                    <div className="col-6"><img width="70px" src={logo} alt="logo" style={{ padding: "10px 0 5px 0" }} />
+                        <span className='main-role' style={{ whiteSpace: "nowrap" }}>Ready Orders</span>
                     </div>
-                    <div className='col-7'>
+                    <div className='col-6'>
                         <div style={{ height: "100%" }} className="d-flex justify-content-end align-items-center nav-con ">
-                        <Link to="/" className='navbar-link navContent ready-button '><img className='nav-image-logo' src={coffee} ></img><span>Active</span></Link>
+                        <Link to="/" className='navbar-link navContent ready-button'>{props.role==="kitchen"?<img className='nav-image-logo' src={food} ></img>:<img className='nav-image-logo' src={coffee}  ></img>}<span>Active</span></Link>
+                       
                             <Link to="/done" className='navbar-link navContent active-button '><FontAwesomeIcon icon={faCircleCheck}></FontAwesomeIcon> <span>Ready</span></Link>
                         </div>
                     </div>
