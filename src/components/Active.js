@@ -117,7 +117,7 @@ const Active = (props) => {
 
                     <div className='col-7'>
                         <div style={{ height: "100%" }} className="d-flex justify-content-end align-items-center nav-con ">
-                            <Link to="/" className='navbar-link navContent active-button'>{props.role==="kitchen"?<img className='nav-image-logo' src={food} ></img>:<img className='nav-image-logo' src={coffee} style={{borderRadius:"50%"}} ></img>}<span>Active</span></Link>
+                            <Link to="/" className='navbar-link navContent active-button'>{props.role==="kitchen"?<img className='nav-image-logo' src={food} ></img>:<img className='nav-image-logo' src={coffee}  ></img>}<span>Active</span></Link>
                             <Link to="/done" className='navbar-link navContent ready-button'><FontAwesomeIcon  icon={faCircleCheck}></FontAwesomeIcon> <span>Ready</span></Link>
                         </div>
 
