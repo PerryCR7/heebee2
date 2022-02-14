@@ -108,8 +108,8 @@ const Done = (props) => {
             if (data.results[index].type === "baristo") {
                 return (
                     <div className='d-flex mt-3'>
-                        <div className='w-25'><img className="DoneImage" style={{ borderRadius: "50%" }} src={data.results[index].image} alt={newId + "IMAGE"}></img></div>
-                        <div className='w-75 ready-small-content'>
+                        <div className='w-30 d-flex justify-content-center align-items-center'><img className="DoneImage" style={{ borderRadius: "10px" }} src={data.results[index].image} alt={newId + "IMAGE"}></img></div>
+                        <div className='w-70 ready-small-content'>
                             <div className="order-card-title">{data.results[index].name}</div>
 
                             <div className="order-card-text">{orderItem.descr}</div>
@@ -121,8 +121,8 @@ const Done = (props) => {
             else {
                 return (
                     <div className='d-flex mt-3'>
-                        <div className='w-25'><img className="DoneImage"  style={{ borderRadius: "50%" }} src={data.results[index].image} alt={newId + "IMAGE"}></img></div>
-                        <div className='w-75 ready-small-content'>
+                        <div className='w-30 d-flex justify-content-center align-items-center'><img className="DoneImage"  style={{ borderRadius: "10px" }} src={data.results[index].image} alt={newId + "IMAGE"}></img></div>
+                        <div className='w-70 ready-small-content'>
                             <div className="order-card-title">{data.results[index].name}</div>
                             <div className="order-card-text">{orderItem.descr}</div>
                             <div className="quan" >qty:{orderItem.quantity}</div>
