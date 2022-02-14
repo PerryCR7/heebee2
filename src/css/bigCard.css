@@ -188,7 +188,10 @@
    font-weight: 700;
   }
   .nameCust{
-    visibility: hidden;
+    position:absolute;
+    bottom:0;
+    right:62px;
+    /* font-size: 14px; */
   }
   .btn-info,.btn-secondary{
     font-size: 12px;
