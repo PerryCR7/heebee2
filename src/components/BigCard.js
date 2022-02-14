@@ -140,7 +140,7 @@ const BigCard = (props)=>{
         <div className="col-12">
             <div className="card big-card ">
                 <div className="row">
-                    <div className="col-4 orderNumber"><span style={{ whiteSpace: "nowrap" }}>ORDER #{props.item.oId}</span><div className="orderTime">{getTime(props.item.orderTime)}</div></div>
+                    <div className="col-4 orderNumber"><span style={{ whiteSpace: "nowrap" }}>ORDER #{props.item.oId}</span><div className="orderTime" >{getTime(props.item.orderTime)}</div></div>
                     <div className="col-4 orderNumber" style={{ whiteSpace: "nowrap" }}>PREPARING:<span style={{ marginLeft: "10px", color: "red" }}><Stopwatch /></span></div>
                     <div className="col-4 text-right d-flex justify-content-end align-items-start"><span className="orderNumber mr-3 nameCust" style={{ color: "grey" }}>{props.item["Customer-Name"]}<br /><span style={{whiteSpace:"nowrap"}}>{props.item.address}</span></span><span><Avataars /></span></div>
                 </div>
@@ -151,7 +151,7 @@ const BigCard = (props)=>{
                     <div id="accordion" className="col-12">
 
                         <div >
-                            <div className="card-header" id={"heading" + props.item.oId} style={{ padding: "0 !important" }}>
+                            <div className="card-header pl-0" id={"heading" + props.item.oId} >
                                 <h5 className="mb-0">
                                     <button className="btn btn-purple collapsed" data-toggle="collapse" data-target={"#collapse" + props.item.oId} aria-expanded="false" aria-controls={"collapse" + props.item.oId}>
                                         View {props.role === "kitchen" ? "Barista" : "Kitchen"}

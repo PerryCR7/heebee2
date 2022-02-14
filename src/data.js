@@ -89,7 +89,7 @@ const data = {
             "foodType": "Non-veg",
             "foodCategory": "Bee Bites",
             "price": "160",
-            "image": require("./assets/scrambled-eggs.jpeg")
+            "image": require("./assets/scrambled-eggs.jpg")
         }
     ]
 

@@ -47,7 +47,7 @@
 
 
 @media screen and (max-width:786px) {
-    .navContent{
+    .navContent,.btn-purple{
         font-size: 14px;
     }
     .active-button{
