@@ -2,8 +2,11 @@
  width:95%;
  margin:15px auto 0 auto;
  background-color: white;
- border-radius:5px;
+ border-radius:10px;
  padding:10px;
+}
+.card{
+  border-radius: 10px;
 }
 .pull-up{
     -webkit-transition: all .25s ease;

@@ -137,14 +137,14 @@ const Done = (props) => {
         return ReadyOrders.map((item, index) => {
             return (
                 <div className='col-lg-4 col-md-6 col-sm-6 col-xs-12 mt-3'>
-                    <div className="card" style={{ width: "100%", height: "70vh" }}>
+                    <div className="card" style={{ width: "100%", height: "60vh" , borderRadius:"10px" }}>
                         <div className="card-body">
                             <div className='row'>
                                 <div className='col-8 orderNumber'>Order#{item.oId}<br /><span className='orderTime'>{item['Customer-Name']}</span> <div className="orderTime" style={{whiteSpace:"nowrap"}}>{getTime(item.orderTime)}</div>
                                 </div>
                                 <div className='col-4 d-flex justify-content-end '><Avataars /></div>
                             </div>
-                            <div className='innerScroll mt-2' style={{ height: "45vh", overflowY: "auto" }}>
+                            <div className='innerScroll mt-2' style={{ height: "43vh", overflowY: "auto" }}>
                                 {renderSmall(item)}
                             </div>
 
