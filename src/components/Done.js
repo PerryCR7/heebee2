@@ -240,11 +240,11 @@ const Done = (props) => {
     return (
         <React.Fragment>
             <nav className="container-fluid" style={{ backgroundColor: "white" }}>
-                <div className='row' style={{ whiteSpace: "nowrap" }} style={{padding:"0",width:"100%",margin:"0"}}>
-                    <div className="col-6"><img width="70px" src={logo} alt="logo" style={{ padding: "10px 0 5px 0" }} />
-                        <span className='main-role' style={{ whiteSpace: "nowrap" }}>Ready Orders</span>
+                <div className='row' style={{ whiteSpace: "nowrap" }} >
+                    <div className="col-5"><img width="70px" src={logo} alt="logo" style={{ padding: "10px 0 5px 0" }} />
+                        <span className='main-role mr'>Ready Orders</span>
                     </div>
-                    <div className='col-6'>
+                    <div className='col-7'>
                         <div style={{ height: "100%" }} className="d-flex justify-content-end align-items-center nav-con ">
                         <Link to="/" className='navbar-link navContent ready-button'>{props.role==="kitchen"?<img className='nav-image-logo' src={food} ></img>:<img className='nav-image-logo' src={coffee}  ></img>}<span>Active</span></Link>
                        

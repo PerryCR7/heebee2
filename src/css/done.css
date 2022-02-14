@@ -61,7 +61,8 @@
     padding-left: 5px;
   }
   .quan {
-    font-size: 13px;
+    font-size: 15px;
+    font-weight: 700;
   }
   .orderNumber {
     font-size: 14px;
@@ -72,11 +73,11 @@
     font-weight: 400;
   }
   .order-card-title {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 700;
   }
   .order-card-text {
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 700;
   }
 }
@@ -96,5 +97,9 @@
   .DoneImage {
     width: 70px;
     height: 70px;
+  }
+  .mr{
+    font-size: 16px;
+    white-space: nowrap;
   }
 }
