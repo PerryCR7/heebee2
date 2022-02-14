@@ -37,14 +37,14 @@ const BigCard = (props)=>{
                     return (
                         <div key={newId} className="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-xs-12 mt-3 ">
 
-                            <div className={"card p-2 mb-2 pb-4 " + foodColor}>
+                            <div className={"card p-2 mb-2 " + foodColor}>
                                 <div className="row">
-                                    <div className=" col-4 d-flex justify-content-center align-items-center"><img className="card-img-top" style={{ width: "80px", height: "80px", borderRadius: "50%" }} src={data.results[index].image} alt="Card image cap" /></div>
-                                    <div className=" col-8">
+                                    <div className=" col-4 d-flex justify-content-center align-items-center "><img className="card-img-top"  src={data.results[index].image} alt="Card image cap" /></div>
+                                    <div className=" col-8 pl-0 main-card-text">
                                         <div className="order-card-title">{data.results[index].name}</div>
                                         <div className="order-card-text">{item.descr}</div>
                                         <div className="quantity" >{item.quantity}</div>
-                                        <div id={"button" + newId} className="btn btn-check" onClick={() => { $("#" + newId + " .thumbsUp").css("display", "inline"); $("#button" + newId).css("display", "none") }}>Done?</div>
+                                        <div className="d-flex justify-content-end mt-2" style={{bottom:"0"}}><div id={"button" + newId} className="btn btn-check" onClick={() => { $("#" + newId + " .thumbsUp").css("display", "inline"); $("#button" + newId).css("display", "none") }}>Done?</div></div>
                                         <div id={newId}  ><FontAwesomeIcon className="thumbsUp" icon={faThumbsUp}></FontAwesomeIcon></div>
 
                                     </div>
@@ -57,15 +57,16 @@ const BigCard = (props)=>{
                     return (
                         <div key={newId} className="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-xs-12 ">
 
-                            <div className={"card p-2 mb-2 pb-4 " + foodColor}>
+                            <div className={"card p-2 mb-2 " + foodColor}>
                                 <div className="row">
-                                    <div className="col-4 d-flex justify-content-center align-items-center"><img className="card-img-top" style={{ width: "80px", height: "80px", borderRadius: "50%" }} src={data.results[index].image} alt="Card image cap" /></div>
-                                    <div className="col-8">
+                                    <div className="col-4 d-flex justify-content-center align-items-center"><img className="card-img-top"  src={data.results[index].image} alt="Card image cap" /></div>
+                                    <div className="col-8 pl-0 main-card-text">
                                         <div className="order-card-title">{data.results[index].name}</div>
                                         <div className="order-card-text">{item.descr}</div>
-                                        <div id={"button" + newId} className="btn btn-check" onClick={() => { $("#" + newId + " .thumbsUp").css("display", "inline"); $("#button" + newId).css("display", "none") }}>Done?</div>
-                                        <div id={newId}  ><FontAwesomeIcon className="thumbsUp" icon={faThumbsUp}></FontAwesomeIcon></div>
                                         <div className="quantity" style={{ fontWeight: "600" }}>{item.quantity}</div>
+                                        <div className="d-flex justify-content-end mt-2" style={{bottom:"0"}}><div id={"button" + newId} className="btn btn-check" onClick={() => { $("#" + newId + " .thumbsUp").css("display", "inline"); $("#button" + newId).css("display", "none") }}>Done?</div></div>
+                                        <div id={newId}  ><FontAwesomeIcon className="thumbsUp" icon={faThumbsUp}></FontAwesomeIcon></div>
+                                        
                                     </div>
                                 </div>
 
@@ -99,8 +100,8 @@ const BigCard = (props)=>{
 
                             <div className={"card mb-2  " + foodColor}>
                                 <div className="row">
-                                    <div className="col-3 d-flex justify-content-center align-items-center"><img className="card-img-top" style={{ width: "80px", height: "80px", borderRadius: "50%" }} src={data.results[index].image} alt="Card image cap" /></div>
-                                    <div className="col-9">
+                                    <div className="col-4 d-flex justify-content-center align-items-center"><img className="card-img-top" src={data.results[index].image} alt="Card image cap" /></div>
+                                    <div className="col-8">
                                         <div className="order-card-title">{data.results[index].name}</div>
                                         <div className="order-card-text">{item.descr}</div>
                                         <div className="quantity" style={{ fontWeight: "600" }}>{item.quantity}</div>
@@ -152,7 +153,7 @@ const BigCard = (props)=>{
                         <div >
                             <div className="card-header" id={"heading" + props.item.oId} style={{ padding: "0 !important" }}>
                                 <h5 className="mb-0">
-                                    <button className="btn btn-secondary collapsed" data-toggle="collapse" data-target={"#collapse" + props.item.oId} aria-expanded="false" aria-controls={"collapse" + props.item.oId}>
+                                    <button className="btn btn-purple collapsed" data-toggle="collapse" data-target={"#collapse" + props.item.oId} aria-expanded="false" aria-controls={"collapse" + props.item.oId}>
                                         View {props.role === "kitchen" ? "Barista" : "Kitchen"}
                                     </button>
                                 </h5>
