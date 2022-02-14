@@ -96,7 +96,7 @@ const BigCard = (props)=>{
                 if (data.results[index].type === "baristo") {
                     return (
 
-                        <div key={newId} className="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-xs-12 ">
+                        <div key={newId} className="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-xs-12 mt-3">
 
                             <div className={"card mb-2  " + foodColor}>
                                 <div className="row">
