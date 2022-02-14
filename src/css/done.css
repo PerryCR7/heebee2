@@ -16,7 +16,7 @@
 .orderTime {
   font-size: 15px;
   color: grey;
-  font-weight: 400;
+  font-weight: 700;
 }
 .DoneImage {
   width: 80px;
@@ -24,7 +24,7 @@
 }
 .card{
   box-shadow: 0 0 4px 0px #888888;
-  
+
   /* background:rgba(255,255,255,0.7) */
 }
 .card-header{
