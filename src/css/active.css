@@ -44,7 +44,9 @@
     border: 2px solid #f83218;
     color:#f83218;
 }
-
+.nav-image-logo{
+    width:30px;
+}
 
 @media screen and (max-width:786px) {
     .navContent,.btn-purple{

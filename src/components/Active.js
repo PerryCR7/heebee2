@@ -4,7 +4,9 @@ import logo from "../assets/logo.png"
 import BigCard from './BigCard';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleCheck } from '@fortawesome/free-solid-svg-icons';
-import { faAppleWhole } from '@fortawesome/free-solid-svg-icons';
+import { faMugHot } from '@fortawesome/free-solid-svg-icons';
+import coffee from "../assets/coffee-cup-min.png";
+import food from "../assets/baristaIcon.png";
 
 import "../css/active.css";
 
@@ -109,13 +111,13 @@ const Active = (props) => {
         <React.Fragment>
             <nav className="container-fluid" style={{backgroundColor:"white"}}>
                 <div className='row pl-1' style={{whiteSpace:"nowrap"}}>
-                    <div className="col-5"><img width="70px" src={logo} alt="logo" style={{marginTop:"10px",marginBottom:"5px"}}/>
+                <div className="col-5"><img width="70px" src={logo} alt="logo" style={{marginTop:"10px",marginBottom:"5px"}}/>
                     <span className='main-role'>{role==='kitchen'?"Kitchen":"Barista"}</span>
                     </div>
 
                     <div className='col-7'>
                         <div style={{ height: "100%" }} className="d-flex justify-content-end align-items-center nav-con ">
-                            <Link to="/" className='navbar-link navContent active-button'><FontAwesomeIcon icon={faAppleWhole}></FontAwesomeIcon><span>Active</span></Link>
+                            <Link to="/" className='navbar-link navContent active-button'>{props.role==="kitchen"?<img className='nav-image-logo' src={food} ></img>:<img className='nav-image-logo' src={coffee} style={{borderRadius:"50%"}} ></img>}<span>Active</span></Link>
                             <Link to="/done" className='navbar-link navContent ready-button'><FontAwesomeIcon  icon={faCircleCheck}></FontAwesomeIcon> <span>Ready</span></Link>
                         </div>
 
@@ -125,7 +127,8 @@ const Active = (props) => {
             </nav>
             {/* navbar ends */}
             {/* Body of Active js */}
-            {renderCards()}
+            <div className='container-fluid'>{renderCards()}</div>
+            
         </React.Fragment>
 
 

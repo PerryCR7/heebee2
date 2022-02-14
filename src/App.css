@@ -1,5 +1,9 @@
 body{
-  background-color: #EEC7CF;
+ 
+  /* background-image: linear-gradient( #e99fd3, #F6F6F6, #FF8247); */
+  background-image: linear-gradient(to right bottom, #e99fd3, #e6b1e0, #e4c3ea, #e6d3f0, #eae3f4, #ece0f5, #f0ddf5, #f4d9f4, #ffbfe0, #ffa4ba, #ff8d85, #ff8247);
+  /* background-size: cover; */
+
 }
   
 body::-webkit-scrollbar {

@@ -3,7 +3,9 @@ import { Link } from 'react-router-dom';
 import logo from "../assets/logo.png"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleCheck } from '@fortawesome/free-solid-svg-icons';
-import { faAppleWhole } from '@fortawesome/free-solid-svg-icons';
+import { faMugHot } from '@fortawesome/free-solid-svg-icons';
+import coffee from "../assets/coffee-cup-min.png";
+import food from "../assets/baristaIcon.png";
 import data from "../data";
 import "../css/done.css";
 import { v4 as uuid } from 'uuid';
@@ -58,6 +60,86 @@ const Done = (props) => {
         },
         {
             "oId": 1234566,
+            "Customer-Name": 'Kim Seokjin',
+            "orderTime": "1607110465663",
+            "address": "Sarabha Nagar, 100159071",
+            "Orders": [
+                {
+                    "orderId": "003",
+                    "quantity": "2",
+                    "descr":"Medium, No Milk "
+                }, {
+                    "orderId": "001",
+                    "quantity": "1",
+                    "descr":"Large, skimmed Milk "
+                },
+                {
+                    "orderId": "006",
+                    "quantity": "1",
+                    "descr":"Large, No Tomatoes ,Onion,Double Cheese "
+                }
+            ]
+        }, {
+            "oId": 1234534,
+            "Customer-Name": 'Kim Taehyung',
+            "orderTime": "1607110465663",
+            "address": "Sarabha Nagar, 100159071",
+            "Orders": [
+                {
+                    "orderId": "007",
+                    "quantity": "2",
+                    "descr":"Medium, No Milk "
+                }, {
+                    "orderId": "009",
+                    "quantity": "1",
+                    "descr":"With Fresh mint, lemon "
+                },
+                {
+                    "orderId": "010",
+                    "quantity": "2",
+                    "descr":"onion , cheese, tomatoes "
+                }
+            ]
+        },{
+            "oId": 1234598,
+            "Customer-Name": 'Angela Yu',
+            "orderTime": "1607110465663",
+            "address": "Sarabha Nagar, 100159071",
+            "Orders": [
+                {
+                    "orderId": "001",
+                    "quantity": "2",
+                    "descr":"Large, skimmed Milk "
+                }, {
+                    "orderId": "002",
+                    "quantity": "1",
+                    "descr":"Large, Double Patty , Without Anchovies"
+                }
+                ,
+                {
+                    "orderId": "003",
+                    "quantity": "1", 
+                    "descr":"Medium, No Milk "
+                },
+                {
+                    "orderId": "004",
+                    "quantity": "1","descr":"Large, Skimmed Milk  "
+                },
+                {
+                    "orderId": "005",
+                    "quantity": "1",
+                    "descr":"Large, Sour Cream, Cheddar Cheese "
+                },
+
+                {
+                    "orderId": "006",
+                    "quantity": "1",
+                    "descr":"Large, Cheese Burst ,No Mushrooms"
+                }
+            ]
+        },
+        {
+            "oId": 1234599,
             "Customer-Name": 'Kim Seokjin',
             "orderTime": "1607110465663",
             "address": "Sarabha Nagar, 100159071",
@@ -158,13 +240,13 @@ const Done = (props) => {
     return (
         <React.Fragment>
             <nav className="container-fluid" style={{ backgroundColor: "white" }}>
-                <div className='row' style={{ whiteSpace: "nowrap" }}>
-                    <div className="col-5"><img width="70px" src={logo} alt="logo" style={{ margin: "10px 0 5px 0" }} />
+                <div className='row' style={{ whiteSpace: "nowrap" }} style={{padding:"0",width:"100%",margin:"0"}}>
+                    <div className="col-5"><img width="70px" src={logo} alt="logo" style={{ padding: "10px 0 5px 0" }} />
                         {/* <span className='main-role'>{role === 'kitchen' ? "Kitchen" : "Barista"}</span> */}
                     </div>
                     <div className='col-7'>
                         <div style={{ height: "100%" }} className="d-flex justify-content-end align-items-center nav-con ">
-                        <Link to="/" className='navbar-link navContent ready-button '><FontAwesomeIcon  icon={faAppleWhole}></FontAwesomeIcon><span>Active</span></Link>
+                        <Link to="/" className='navbar-link navContent ready-button '><img className='nav-image-logo' src={coffee} ></img><span>Active</span></Link>
                             <Link to="/done" className='navbar-link navContent active-button '><FontAwesomeIcon icon={faCircleCheck}></FontAwesomeIcon> <span>Ready</span></Link>
                         </div>
                     </div>
