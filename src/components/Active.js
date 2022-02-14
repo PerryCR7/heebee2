@@ -108,8 +108,8 @@ const Active = (props) => {
         // navbar starts
         <React.Fragment>
             <nav className="container-fluid" style={{backgroundColor:"white"}}>
-                <div className='row' style={{whiteSpace:"nowrap"}}>
-                    <div className="col-5"><img width="70px" src={logo} alt="logo" style={{margin:"10px 0 5px 0"}}/>
+                <div className='row pl-1' style={{whiteSpace:"nowrap"}}>
+                    <div className="col-5"><img width="70px" src={logo} alt="logo" style={{marginTop:"10px",marginBottom:"5px"}}/>
                     <span className='main-role'>{role==='kitchen'?"Kitchen":"Barista"}</span>
                     </div>
 
