@@ -11,12 +11,12 @@
 }
 .orderNumber {
   font-size: 17px;
-  font-weight: 600;
+  font-weight: 700;
 }
 .orderTime {
   font-size: 15px;
   color: grey;
-  font-weight: 700;
+  font-weight: 600;
 }
 .DoneImage {
   width: 80px;
@@ -70,7 +70,7 @@
   .orderTime {
     font-size: 13px;
     color: grey;
-    font-weight: 400;
+    font-weight: 600;
   }
   .order-card-title {
     font-size: 16px;
@@ -88,7 +88,7 @@
   .orderTime {
     font-size: 14px;
     color: grey;
-    font-weight: 400;
+    font-weight: 600;
   }
   .order-card-title {
     font-size: 16px;
