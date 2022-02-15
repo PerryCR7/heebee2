@@ -195,7 +195,7 @@ const Done = (props) => {
                             <div className="order-card-title">{data.results[index].name}</div>
 
                             <div className="order-card-text">{orderItem.descr}</div>
-                            <div className="quan" >qty:{orderItem.quantity}</div>
+                            <div className="quan" >QTY:{orderItem.quantity}</div>
                         </div>
                     </div>
                 )
@@ -207,7 +207,7 @@ const Done = (props) => {
                         <div className='w-70 ready-small-content'>
                             <div className="order-card-title">{data.results[index].name}</div>
                             <div className="order-card-text">{orderItem.descr}</div>
-                            <div className="quan" >qty:{orderItem.quantity}</div>
+                            <div className="quan" >QTY:{orderItem.quantity}</div>
                         </div>
                     </div>
                 );

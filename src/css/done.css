@@ -16,7 +16,7 @@
 .orderTime {
   font-size: 15px;
   color: grey;
-  font-weight: 600;
+  font-weight: 700;
 }
 .DoneImage {
   width: 80px;
@@ -48,7 +48,7 @@
 }
 .quan {
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 700;
   color: #f83218;
 }
 .main-role{
@@ -64,7 +64,7 @@
     padding-left: 5px;
   }
   .quan {
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 700;
   }
   .orderNumber {
@@ -95,6 +95,10 @@
   }
   .order-card-title {
     font-size: 16px;
+    font-weight: 700;
+  }
+  .quan {
+    font-size: 14px;
     font-weight: 700;
   }
   .DoneImage {

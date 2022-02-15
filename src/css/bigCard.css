@@ -112,6 +112,11 @@
 }
 .btn-purple:focus{border:1px solid #8E44AD; box-shadow: 0px;}
 
+.prep-view{
+  display:flex;
+  justify-content: center;
+  align-items: start;
+}
 
 @media only screen and (max-width: 786px) {
   .orderNumber{
@@ -159,11 +164,11 @@
     padding-left:15px !important;
   }
   .order-card-title{
-    font-size:14px;
+    font-size:16px;
     font-weight: 700;
    }
    .order-card-text{
-     font-size:12px;
+     font-size:14px;
      font-weight: 700;
    }
 }
@@ -205,6 +210,13 @@
   .card-img-top{
     width:80px !important;
     height:80px !important;
+  }
+  .prep-view{
+    display:flex;
+    justify-content: end;
+    align-items: start;
+    padding-right: 0;
+    right: -25px;
   }
  
 }
