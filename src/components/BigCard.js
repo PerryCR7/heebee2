@@ -105,7 +105,7 @@ const BigCard = (props)=>{
                                         <div className="order-card-title">{data.results[index].name}</div>
                                         <div className="order-card-text">{item.descr}</div>
                                         <div className="quantity" style={{ fontWeight: "600" }}>{item.quantity}</div>
-                                        {item.done===false?<div className="d-flex justify-content-end mt-2" style={{bottom:"0"}}><div id={"button" + newId} className="btn btn-check" >preparing</div></div>:<div id={newId}  ><FontAwesomeIcon className="thumbsUp" style={{display:"inline"}} icon={faThumbsUp}></FontAwesomeIcon></div>}
+                                        {item.done===false?<div className="d-flex justify-content-end mt-2" style={{bottom:"0"}}><div id={"button" + newId} className="btn btn-check" >Preparing</div></div>:<div id={newId}  ><FontAwesomeIcon className="thumbsUp" style={{display:"inline"}} icon={faThumbsUp}></FontAwesomeIcon></div>}
                                         
                                         
                                     </div>
@@ -126,7 +126,7 @@ const BigCard = (props)=>{
                                         <div className="order-card-title">{data.results[index].name}</div>
                                         <div className="order-card-text">{item.descr}</div>
                                         <div className="quantity" style={{ fontWeight: "600" }}>{item.quantity}</div>
-                                        {item.done===false?<div className="d-flex justify-content-end mt-2" style={{bottom:"0"}}><div id={"button" + newId} className="btn btn-check" >preparing</div></div>:<div id={newId}  ><FontAwesomeIcon className="thumbsUp" style={{display:"inline"}} icon={faThumbsUp}></FontAwesomeIcon></div>}
+                                        {item.done===false?<div className="d-flex justify-content-end mt-2" style={{bottom:"0"}}><div id={"button" + newId} className="btn btn-check" >Preparing</div></div>:<div id={newId}  ><FontAwesomeIcon className="thumbsUp" style={{display:"inline"}} icon={faThumbsUp}></FontAwesomeIcon></div>}
                                     </div>
                                 </div>
 
