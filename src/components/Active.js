@@ -24,32 +24,38 @@ const Active = (props) => {
                 {
                     "orderId": "001",
                     "quantity": "2",
-                    "descr":"Large, skimmed Milk "
+                    "descr":"Large, skimmed Milk ",
+                    "done":true
                 }, {
                     "orderId": "002",
                     "quantity": "1",
-                    "descr":"Large, Double Patty , Without Anchovies"
+                    "descr":"Large, Double Patty , Without Anchovies",
+                    "done":false
                 }
                 ,
                 {
                     "orderId": "003",
                     "quantity": "1", 
-                    "descr":"Medium, No Milk "
+                    "descr":"Medium, No Milk ",
+                    "done":true
                 },
                 {
                     "orderId": "004",
-                    "quantity": "1","descr":"Large, Skimmed Milk  "
+                    "quantity": "1","descr":"Large, Skimmed Milk  ",
+                    "done":false
                 },
                 {
                     "orderId": "005",
                     "quantity": "1",
-                    "descr":"Large, Sour Cream, Cheddar Cheese "
+                    "descr":"Large, Sour Cream, Cheddar Cheese ",
+                    "done":false
                 },
 
                 {
                     "orderId": "006",
                     "quantity": "1",
-                    "descr":"Large, Cheese Burst ,No Mushrooms"
+                    "descr":"Large, Cheese Burst ,No Mushrooms",
+                    "done":true
                 }
             ]
         },
@@ -62,16 +68,16 @@ const Active = (props) => {
                 {
                     "orderId": "003",
                     "quantity": "2",
-                    "descr":"Medium, No Milk "
+                    "descr":"Medium, No Milk ","done":true
                 }, {
                     "orderId": "001",
                     "quantity": "1",
-                    "descr":"Large, skimmed Milk "
+                    "descr":"Large, skimmed Milk ","done":true
                 },
                 {
                     "orderId": "006",
                     "quantity": "1",
-                    "descr":"Large, No Tomatoes ,Onion,Double Cheese "
+                    "descr":"Large, No Tomatoes ,Onion,Double Cheese ","done":false
                 }
             ]
         },
@@ -84,16 +90,16 @@ const Active = (props) => {
                 {
                     "orderId": "007",
                     "quantity": "2",
-                    "descr":"Medium, No Milk "
+                    "descr":"Medium, No Milk ","done":false
                 }, {
                     "orderId": "009",
                     "quantity": "1",
-                    "descr":"With Fresh mint, lemon "
+                    "descr":"With Fresh mint, lemon ","done":true
                 },
                 {
                     "orderId": "010",
                     "quantity": "2",
-                    "descr":"onion , cheese, tomatoes "
+                    "descr":"onion , cheese, tomatoes ","done":false
                 }
             ]
         }
@@ -110,7 +116,7 @@ const Active = (props) => {
 
         // navbar starts
         <React.Fragment>
-            <nav className="container-fluid" style={{backgroundColor:"white"}}>
+            <nav className="container-fluid" style={{backgroundColor:"#5C3706"}}>
                 <div className='row pl-1' style={{whiteSpace:"nowrap"}}>
                 <div className="col-5"><img width="70px" src={logo} alt="logo" style={{marginTop:"10px",marginBottom:"5px"}}/>
                     <span className='main-role'>{role==='kitchen'?"Kitchen":"Barista"}</span>

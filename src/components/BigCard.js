@@ -44,7 +44,7 @@ const BigCard = (props)=>{
                                         <div className="order-card-title">{data.results[index].name}</div>
                                         <div className="order-card-text">{item.descr}</div>
                                         <div className="quantity" >{item.quantity}</div>
-                                        <div className="d-flex justify-content-end mt-2" style={{bottom:"0"}}><div id={"button" + newId} className="btn btn-check" onClick={() => { $("#" + newId + " .thumbsUp").css("display", "inline"); $("#button" + newId).css("display", "none") }}>Done?</div></div>
+                                        <div className="d-flex justify-content-end mt-2" style={{bottom:"0"}}><div id={"button" + newId} className="btn btn-check" onClick={() => { $("#" + newId + " .thumbsUp").css("display", "inline"); $("#button" + newId).css("display", "none") }}>Ready?</div></div>
                                         <div id={newId}  ><FontAwesomeIcon className="thumbsUp" icon={faThumbsUp}></FontAwesomeIcon></div>
 
                                     </div>
@@ -64,7 +64,7 @@ const BigCard = (props)=>{
                                         <div className="order-card-title">{data.results[index].name}</div>
                                         <div className="order-card-text">{item.descr}</div>
                                         <div className="quantity" style={{ fontWeight: "600" }}>{item.quantity}</div>
-                                        <div className="d-flex justify-content-end mt-2" style={{bottom:"0"}}><div id={"button" + newId} className="btn btn-check" onClick={() => { $("#" + newId + " .thumbsUp").css("display", "inline"); $("#button" + newId).css("display", "none") }}>Done?</div></div>
+                                        <div className="d-flex justify-content-end mt-2" style={{bottom:"0"}}><div id={"button" + newId} className="btn btn-check" onClick={() => { $("#" + newId + " .thumbsUp").css("display", "inline"); $("#button" + newId).css("display", "none") }}>Ready?</div></div>
                                         <div id={newId}  ><FontAwesomeIcon className="thumbsUp" icon={faThumbsUp}></FontAwesomeIcon></div>
                                         
                                     </div>
@@ -98,13 +98,16 @@ const BigCard = (props)=>{
 
                         <div key={newId} className="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-xs-12 mt-3">
 
-                            <div className={"card mb-2  " + foodColor}>
+                            <div className={"card p-2 mb-2  " + foodColor}>
                                 <div className="row">
                                     <div className="col-4 d-flex justify-content-center align-items-center"><img className="card-img-top" src={data.results[index].image} alt="Card image cap" /></div>
                                     <div className="col-8 pl-0 main-card-text">
                                         <div className="order-card-title">{data.results[index].name}</div>
                                         <div className="order-card-text">{item.descr}</div>
                                         <div className="quantity" style={{ fontWeight: "600" }}>{item.quantity}</div>
+                                        {item.done===false?<div className="d-flex justify-content-end mt-2" style={{bottom:"0"}}><div id={"button" + newId} className="btn btn-check" >preparing</div></div>:<div id={newId}  ><FontAwesomeIcon className="thumbsUp" style={{display:"inline"}} icon={faThumbsUp}></FontAwesomeIcon></div>}
+                                        
+                                        
                                     </div>
                                 </div>
 
@@ -116,13 +119,14 @@ const BigCard = (props)=>{
                     return (
                         <div key={newId} className="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-xs-12 mt-3 ">
 
-                            <div className={"card mb-2 " + foodColor}>
+                            <div className={"card p-2 mb-2 " + foodColor}>
                                 <div className="row">
                                     <div className="col-4  d-flex justify-content-center align-items-center "><img className="card-img-top" style={{ width: "80px", height: "80px", borderRadius: "50%" }} src={data.results[index].image} alt="Card image cap" /></div>
                                     <div className="col-8 pl-0 main-card-text">
                                         <div className="order-card-title">{data.results[index].name}</div>
                                         <div className="order-card-text">{item.descr}</div>
                                         <div className="quantity" style={{ fontWeight: "600" }}>{item.quantity}</div>
+                                        {item.done===false?<div className="d-flex justify-content-end mt-2" style={{bottom:"0"}}><div id={"button" + newId} className="btn btn-check" >preparing</div></div>:<div id={newId}  ><FontAwesomeIcon className="thumbsUp" style={{display:"inline"}} icon={faThumbsUp}></FontAwesomeIcon></div>}
                                     </div>
                                 </div>
 

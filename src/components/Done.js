@@ -189,7 +189,7 @@ const Done = (props) => {
             const index = data.results.findIndex(od => od.id === orderItem.orderId);
             if (data.results[index].type === "baristo") {
                 return (
-                    <div className='d-flex mt-3'>
+                    <div key={newId} className='d-flex mt-3'>
                         <div className='w-30 d-flex justify-content-center align-items-center'><img className="DoneImage" style={{ borderRadius: "10px" }} src={data.results[index].image} alt={newId + "IMAGE"}></img></div>
                         <div className='w-70 ready-small-content'>
                             <div className="order-card-title">{data.results[index].name}</div>
@@ -202,7 +202,7 @@ const Done = (props) => {
             }
             else {
                 return (
-                    <div className='d-flex mt-3'>
+                    <div key={newId} className='d-flex mt-3'>
                         <div className='w-30 d-flex justify-content-center align-items-center'><img className="DoneImage"  style={{ borderRadius: "10px" }} src={data.results[index].image} alt={newId + "IMAGE"}></img></div>
                         <div className='w-70 ready-small-content'>
                             <div className="order-card-title">{data.results[index].name}</div>
@@ -218,7 +218,7 @@ const Done = (props) => {
     const BigCard = () => {
         return ReadyOrders.map((item, index) => {
             return (
-                <div className='col-lg-4 col-md-6 col-sm-6 col-xs-12 mt-3'>
+                <div key={index} className='col-lg-4 col-md-6 col-sm-6 col-xs-12 mt-3'>
                     <div className="card" style={{ width: "100%", height: "60vh" , borderRadius:"10px", overflow:"hidden" }}>
                         <div className="card-body">
                             <div className='row'>
@@ -239,7 +239,7 @@ const Done = (props) => {
     }
     return (
         <React.Fragment>
-            <nav className="container-fluid" style={{ backgroundColor: "white" }}>
+            <nav className="container-fluid" style={{backgroundColor:"#5C3706"}}>
                 <div className='row' style={{ whiteSpace: "nowrap" }} >
                     <div className="col-5"><img width="70px" src={logo} alt="logo" style={{ padding: "10px 0 5px 0" }} />
                         <span className='main-role mr'>Ready Orders</span>

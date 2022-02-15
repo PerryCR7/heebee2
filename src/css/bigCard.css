@@ -68,19 +68,22 @@
   width:70px;
    height:70px;
 }
+.card-header{
+  border-bottom: 0;
+}
 .quantity{
   display:flex;
   position:absolute;
   width:30px;
   height:30px;
-  background-color: #f83218;
-  color:white;
+  background-color: #EFC410;
+  color:#5C3706;
   border-radius: 50%;
   top:-15px;
   right:0;
   justify-content: center;
   align-items: center;
-  font-weight: 900;
+  font-weight: 900 !important;
    
 }
 .order-card-text{
@@ -89,7 +92,7 @@
   font-weight: 700;
 }
 .btn-check{
-  width:58px;
+  /* width:58px; */
 
   padding:2px 5px;
   /* border:2px solid #86B7A0; */
@@ -104,7 +107,7 @@
   border-radius: 10px;
 }
 .btn-purple{
-  background-color:#8E44AD;
+  background-color:#5C3706;
   color:white;
 }
 .btn-purple:focus{border:1px solid #8E44AD; box-shadow: 0px;}
