@@ -30,8 +30,16 @@
 .card-header{
   background: inherit;
 }
+.innerScroll{
+  height: 310px !important;
+  padding-bottom: 20px;
+}
+.outer-scroll{
+  height: 440px;
+}
 .innerScroll::-webkit-scrollbar {
   width: 0.3em;
+
 }
 
 .innerScroll::-webkit-scrollbar-track:vertical {
@@ -56,8 +64,8 @@
 }
 @media screen and (max-width: 786px) {
   .DoneImage {
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
    
   }
   .ready-small-content {

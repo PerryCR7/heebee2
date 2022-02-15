@@ -196,6 +196,7 @@
    font-weight: 700;
   }
   .nameCust{
+    width:150px;
     position:absolute;
     bottom:0;
     right:62px;
@@ -219,4 +220,7 @@
     right: -25px;
   }
  
+}
+@media only screen and (max-width: 500px){
+  
 }
