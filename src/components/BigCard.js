@@ -142,7 +142,7 @@ const BigCard = (props)=>{
     }
     return (
         <div className="col-12">
-            <div className="card big-card ">
+            <div className="card big-card p-4">
                 <div className="row">
                     <div className="col-4 orderNumber"><span style={{ whiteSpace: "nowrap" }}>ORDER #{props.item.oId}</span><div className="orderTime" >{getTime(props.item.orderTime)}</div></div>
                     <div className="col-4 orderNumber prep-view" style={{ whiteSpace: "nowrap" }}>Preparing:<span style={{ marginLeft: "10px", color: "red" }}><Stopwatch /></span></div>

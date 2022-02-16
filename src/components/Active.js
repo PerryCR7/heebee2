@@ -116,10 +116,10 @@ const Active = (props) => {
 
         // navbar starts
         <React.Fragment>
-            <nav className="container-fluid" style={{backgroundColor:"#fff"}}>
-                <div className='row pl-1' style={{whiteSpace:"nowrap"}}>
-                <div className="col-5"><img width="70px" src={logo} alt="logo" style={{marginTop:"10px",marginBottom:"5px"}}/>
-                    <span className='main-role'>{role==='kitchen'?"Kitchen":"Barista"}</span>
+            <nav className="container-fluid">
+                <div className='row ' style={{whiteSpace:"nowrap",borderRadius:"10px" ,margin:"2px", border:"1px solid rgba(0,0,0,.125)",boxShadow:"rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset"}}>
+                <div className="col-5"><img width="70px" src={logo} alt="logo" style={{marginTop:"10px",marginBottom:"10px"}}/>
+                    <span className='main-role cursive'>{role==='kitchen'?"Kitchen":"Barista"}</span>
                     </div>
 
                     <div className='col-7'>

@@ -25,13 +25,13 @@
     color:#5F3C2A;
 }
 .active-button{
-    border:2px solid #DABC98;
-    background-color:#DABC98;
+    border:2px solid #D1CBB9;
+    background-color:#D1CBB9;
     color:white;
     font-weight: 600;
 }
 .active-button:hover{
-     border:3px solid #DABC98;
+     border:2px solid #DABC98;
     background-color:#DABC98;
     color:white;
     
@@ -40,8 +40,8 @@
     margin-right: 2.6%;
 }
 .ready-button{
-    border: 3px solid #DABC98;
-    color:#DABC98;
+    border: 3px solid #D1CBB9;
+    color:#D1CBB9;
 }
 .ready-button:hover{
     border: 3px solid #DABC98;
