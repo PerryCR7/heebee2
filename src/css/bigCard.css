@@ -79,7 +79,7 @@
 }
 
 .orderNumber{
-  font-size: 17px;
+  font-size: 18px;
   font-weight: 700;
 }
 .orderTime{
@@ -88,6 +88,7 @@
   font-weight: 400;
 }
 .order-card-title{
+  font-family: 'Merienda One', cursive;
  font-size:18px;
  font-weight: 700;
 }
@@ -148,7 +149,7 @@
 
 @media only screen and (max-width: 786px) {
   .orderNumber{
-    font-size: 14px;
+    font-size: 16px;
   
   }
   .orderTime{
@@ -192,11 +193,11 @@
     padding-left:15px !important;
   }
   .order-card-title{
-    font-size:16px;
+    font-size:14px;
     font-weight: 700;
    }
    .order-card-text{
-     font-size:14px;
+     font-size:12px;
      font-weight: 700;
    }
 }
@@ -211,11 +212,11 @@
 
 @media only screen and (max-width: 480px) {
   .orderNumber{
-    font-size: 12px;
+    font-size: 14px;
   
   }
   .orderTime{
-    font-size: 12px;
+    font-size: 14px;
     color:grey;
     font-weight: 400;
   }
@@ -223,13 +224,7 @@
    font-size:14px;
    font-weight: 700;
   }
-  .nameCust{
-    width:150px;
-    position:absolute;
-    bottom:0;
-    right:62px;
-    /* font-size: 14px; */
-  }
+
   .btn-info,.btn-secondary{
     font-size: 12px;
   }
@@ -250,5 +245,7 @@
  
 }
 @media only screen and (max-width: 500px){
-  
+  .avtar{
+    display:none !important;
+  }
 }
