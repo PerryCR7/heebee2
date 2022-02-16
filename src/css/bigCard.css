@@ -33,6 +33,20 @@
     padding:5px;
     
 }
+.nonVeg .btn-check{
+  background-color:red;
+}
+.nonVeg .quantity{
+  background-color: red;
+  color: white;
+}
+.nonVeg .thumbsUp{
+  color: #f83218;
+}
+.veg .quantity{
+ background-color: #31da8b;
+  color: white;
+}
 .nonVeg{
     padding:5px;
     border:3px solid #f83218 !important;
@@ -41,6 +55,12 @@
 .coffee{
     padding:5px;
     border:3px solid #eec510 !important; 
+}
+.coffee .btn-check{
+  background-color: #eec510;
+}
+.coffee .thumbsUp{
+  color: #eec510;
 }
 .thumbsUp{
     display:none;
@@ -107,8 +127,9 @@
   border-radius: 10px;
 }
 .btn-purple{
-  background-color:#5C3706;
-  color:white;
+  background-color:#DABC98;
+  color:#5C3706;
+  font-weight: 600;
 }
 .btn-purple:focus{border:1px solid #8E44AD; box-shadow: 0px;}
 

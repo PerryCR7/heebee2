@@ -1,6 +1,5 @@
 .active-button {
- 
-  color: white;
+   color: white;
   font-weight: 600;
 }
 .w-30{
@@ -22,11 +21,9 @@
   width: 80px;
   height: 80px;
 }
-.card{
-  box-shadow: 0 0 4px 0px #888888;
-
+/* .card{
   background:rgba(255,255,255,0.7);
-}
+} */
 .card-header{
   background: inherit;
 }
@@ -60,7 +57,7 @@
   color: #f83218;
 }
 .main-role{
-  color:#EFC410;
+  color:#664d03;
 }
 @media screen and (max-width: 786px) {
   .DoneImage {

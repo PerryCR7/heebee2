@@ -239,7 +239,7 @@ const Done = (props) => {
     }
     return (
         <React.Fragment>
-            <nav className="container-fluid" style={{backgroundColor:"#5C3706"}}>
+            <nav className="container-fluid" style={{backgroundColor:"#fff"}}>
                 <div className='row' style={{ whiteSpace: "nowrap" }} >
                     <div className="col-5"><img width="70px" src={logo} alt="logo" style={{ padding: "10px 0 5px 0" }} />
                         <span className='main-role mr'>Ready Orders</span>

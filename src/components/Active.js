@@ -48,7 +48,7 @@ const Active = (props) => {
                     "orderId": "005",
                     "quantity": "1",
                     "descr":"Large, Sour Cream, Cheddar Cheese ",
-                    "done":false
+                    "done":true
                 },
 
                 {
@@ -116,7 +116,7 @@ const Active = (props) => {
 
         // navbar starts
         <React.Fragment>
-            <nav className="container-fluid" style={{backgroundColor:"#5C3706"}}>
+            <nav className="container-fluid" style={{backgroundColor:"#fff"}}>
                 <div className='row pl-1' style={{whiteSpace:"nowrap"}}>
                 <div className="col-5"><img width="70px" src={logo} alt="logo" style={{marginTop:"10px",marginBottom:"5px"}}/>
                     <span className='main-role'>{role==='kitchen'?"Kitchen":"Barista"}</span>
