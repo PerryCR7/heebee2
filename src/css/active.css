@@ -29,6 +29,7 @@
     background-color:#D1CBB9;
     color:white;
     font-weight: 600;
+    border-radius: 10px;
 }
 .active-button:hover{
      border:2px solid #DABC98;
@@ -40,6 +41,7 @@
     margin-right: 2.6%;
 }
 .ready-button{
+    border-radius: 10px;
     border: 3px solid #D1CBB9;
     color:#D1CBB9;
 }
