@@ -41,8 +41,8 @@ const BigCard = (props)=>{
                                 <div className="row">
                                     <div className=" col-4 d-flex justify-content-center align-items-center "><img className="card-img-top"  src={data.results[index].image} alt="Card image cap" /></div>
                                     <div className=" col-8 pl-0 main-card-text">
-                                        <div className="order-card-title">{data.results[index].name}</div>
-                                        <div className="order-card-text">{item.descr}</div>
+                                        <div className="order-card-title ">{data.results[index].name}</div>
+                                        <div className="order-card-text cursive">{item.descr}</div>
                                         <div className="quantity" >{item.quantity}</div>
                                         <div className="d-flex justify-content-end mt-2" style={{bottom:"0"}}><div id={"button" + newId} className="btn btn-check" onClick={() => { $("#" + newId + " .thumbsUp").css("display", "inline"); $("#button" + newId).css("display", "none") }}>Ready?</div></div>
                                         <div id={newId}  ><FontAwesomeIcon className="thumbsUp" icon={faThumbsUp}></FontAwesomeIcon></div>
@@ -105,7 +105,7 @@ const BigCard = (props)=>{
                                         <div className="order-card-title">{data.results[index].name}</div>
                                         <div className="order-card-text">{item.descr}</div>
                                         <div className="quantity" style={{ fontWeight: "600" }}>{item.quantity}</div>
-                                        {item.done===false?<div className="d-flex justify-content-end mt-2" style={{bottom:"0"}}><div id={"button" + newId} className="btn btn-check" >Preparing</div></div>:<div id={newId}  ><FontAwesomeIcon className="thumbsUp" style={{display:"inline"}} icon={faThumbsUp}></FontAwesomeIcon></div>}
+                                        {item.done===false?<div className="d-flex justify-content-end mt-2" style={{bottom:"0"}}><div id={"button" + newId} className="btn btn-check" style={{backgroundColor:"#858C94"}} >Preparing</div></div>:<div id={newId}  ><FontAwesomeIcon className="thumbsUp" style={{display:"inline",color:"#858C94"}} icon={faThumbsUp}></FontAwesomeIcon></div>}
                                         
                                         
                                     </div>
@@ -126,7 +126,7 @@ const BigCard = (props)=>{
                                         <div className="order-card-title">{data.results[index].name}</div>
                                         <div className="order-card-text">{item.descr}</div>
                                         <div className="quantity" style={{ fontWeight: "600" }}>{item.quantity}</div>
-                                        {item.done===false?<div className="d-flex justify-content-end mt-2" style={{bottom:"0"}}><div id={"button" + newId} className="btn btn-check" >Preparing</div></div>:<div id={newId}  ><FontAwesomeIcon className="thumbsUp" style={{display:"inline"}} icon={faThumbsUp}></FontAwesomeIcon></div>}
+                                        {item.done===false?<div className="d-flex justify-content-end mt-2" style={{bottom:"0"}}><div id={"button" + newId} className="btn btn-check" style={{backgroundColor:"#858C94"}} >Preparing</div></div>:<div id={newId}  ><FontAwesomeIcon className="thumbsUp" style={{display:"inline",color:"#858C94"}} icon={faThumbsUp}></FontAwesomeIcon></div>}
                                     </div>
                                 </div>
 
@@ -146,7 +146,7 @@ const BigCard = (props)=>{
                 <div className="row">
                     <div className="col-4 orderNumber"><span style={{ whiteSpace: "nowrap" }}>ORDER #{props.item.oId}</span><div className="orderTime" >{getTime(props.item.orderTime)}</div></div>
                     <div className="col-4 orderNumber prep-view" style={{ whiteSpace: "nowrap" }}>Preparing:<span style={{ marginLeft: "10px", color: "red" }}><Stopwatch /></span></div>
-                    <div className="col-4 text-right d-flex justify-content-end align-items-start"><span className="orderNumber mr-3 nameCust" style={{ color: "grey", whiteSpace:"nowrap",overflow:"hidden",textOverflow:"ellipsis"}}>{props.item["Customer-Name"]}<br /><span style={{}}>{props.item.address}</span></span><span><Avataars /></span></div>
+                    <div className="col-4 text-right d-flex justify-content-end align-items-start"><span className="orderNumber mr-3 nameCust" style={{ color: "grey", whiteSpace:"nowrap",overflow:"hidden",textOverflow:"ellipsis"}}>{props.item["Customer-Name"]}<br /></span><span><Avataars /></span></div>
                 </div>
                 <div className="row">
                     {renderSmallCARDS()}

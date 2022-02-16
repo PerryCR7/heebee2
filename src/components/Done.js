@@ -192,9 +192,9 @@ const Done = (props) => {
                     <div key={newId} className='d-flex mt-3'>
                         <div className='w-30 d-flex justify-content-center align-items-center'><img className="DoneImage" style={{ borderRadius: "10px" }} src={data.results[index].image} alt={newId + "IMAGE"}></img></div>
                         <div className='w-70 ready-small-content'>
-                            <div className="order-card-title">{data.results[index].name}</div>
+                            <div className="order-card-title cursive">{data.results[index].name}</div>
 
-                            <div className="order-card-text">{orderItem.descr}</div>
+                            <div className="order-card-text cursive">{orderItem.descr}</div>
                             <div className="quan" >QTY:{orderItem.quantity}</div>
                         </div>
                     </div>
@@ -205,8 +205,8 @@ const Done = (props) => {
                     <div key={newId} className='d-flex mt-3'>
                         <div className='w-30 d-flex justify-content-center align-items-center'><img className="DoneImage"  style={{ borderRadius: "10px" }} src={data.results[index].image} alt={newId + "IMAGE"}></img></div>
                         <div className='w-70 ready-small-content'>
-                            <div className="order-card-title">{data.results[index].name}</div>
-                            <div className="order-card-text">{orderItem.descr}</div>
+                            <div className="order-card-title cursive">{data.results[index].name}</div>
+                            <div className="order-card-text cursive">{orderItem.descr}</div>
                             <div className="quan" >QTY:{orderItem.quantity}</div>
                         </div>
                     </div>
