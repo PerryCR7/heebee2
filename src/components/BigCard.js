@@ -121,7 +121,7 @@ const BigCard = (props)=>{
 
                             <div className={"card p-2 mb-2 " + foodColor}>
                                 <div className="row">
-                                    <div className="col-4  d-flex justify-content-center align-items-center "><img className="card-img-top" style={{ width: "80px", height: "80px", borderRadius: "50%" }} src={data.results[index].image} alt="Card image cap" /></div>
+                                    <div className="col-4  d-flex justify-content-center align-items-center "><img className="card-img-top" src={data.results[index].image} alt="Card image cap" /></div>
                                     <div className="col-8 pl-0 main-card-text">
                                         <div className="order-card-title">{data.results[index].name}</div>
                                         <div className="order-card-text">{item.descr}</div>
