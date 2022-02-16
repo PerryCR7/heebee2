@@ -146,7 +146,7 @@ const BigCard = (props)=>{
                 <div className="row">
                     <div className="col-4 orderNumber"><span style={{ whiteSpace: "nowrap" }}>ORDER #{props.item.oId}</span><div className="orderTime" >{getTime(props.item.orderTime)}</div></div>
                     <div className="col-4 orderNumber prep-view" style={{ whiteSpace: "nowrap" }}>Preparing:<span style={{ marginLeft: "10px", color: "red" }}><Stopwatch /></span></div>
-                    <div className="col-4 text-right d-flex justify-content-end align-items-start"><span className="orderNumber mr-3 nameCust" style={{  whiteSpace:"nowrap",overflow:"hidden",textOverflow:"ellipsis"}}>{props.item["Customer-Name"]}<br /></span></div>
+                    <div className="col-4 text-right d-flex justify-content-end align-items-start nameCust"><span className="orderNumber mr-3  " style={{  whiteSpace:"nowrap",overflow:"hidden",textOverflow:"ellipsis"}}>{props.item["Customer-Name"]}<br /></span></div>
                 </div>
                 <div className="row">
                     {renderSmallCARDS()}

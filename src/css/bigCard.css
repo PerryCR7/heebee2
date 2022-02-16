@@ -251,4 +251,13 @@
   .avtar{
     display:none !important;
   }
+  .prep-view{
+    position: absolute;
+    right:20px;
+  }
+  .nameCust{
+    position: absolute;
+    right: 0 ;
+    top:45px;
+  }
 }
