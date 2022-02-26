@@ -107,7 +107,7 @@ const Active = (props) => {
     const renderCards = () => {
         return TotalOrders.map((item, index) => {
             return (
-               <div className='container-fluid'> <div className='row' key={index}> <BigCard item={item} role={role}/></div></div>
+               <div className='container-fluid' key={index}> <div className='row' > <BigCard item={item} role={role}/></div></div>
                 
             )
         })
